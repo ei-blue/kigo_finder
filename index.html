@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>季語ファインダー</title>
+    <meta name="viewport" content="width=device-width">
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+    <h1>季語ファインダー</h1>
+    <p>本日の日付</p>
+    <p id="todaysdate">本日の日付</p>
+ 
+    <p>季語を検索してみよう！</p>
+    <!--<p>季節: <input type="text" name="season"></p>-->
+    <form id=finder method="POST">
+        <label for="seasons">季節を指定する</label><br>
+        <input list="seasons" id="season" name="season" required>
+        <datalist id="seasons">
+            <option value="春"></option>
+            <option value="夏"></option>
+            <option value="秋"></option>
+            <option value="冬"></option>
+            <option value="新年"></option>
+        </datalist>
+        <br>
+        <label for="syllables">音数を指定する</label>
+        <br>
+        <input type="text" name="syllables" id="syllables" min="1" pattern="[0-9]+" required>
+        <br>
+        <button type="submit">検索する</button>
+    </form>
+    <div id="result"></div>
+<script src="jquery.min.js"></script>
+<script src="script.js"></script>   
+</body>
+</html>
