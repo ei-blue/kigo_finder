@@ -17,15 +17,16 @@
         <div id="test">
         <form id=finder method="POST">
             <div class="form-group">
+                <section class="seasons">
                 <label for="seasons">季節を指定する</label><br>
-                <input list="seasons" class="form-control" id="season" name="season" required>
-                <datalist id="seasons">
-                    <option value="春"></option>
-                    <option value="夏"></option>
-                    <option value="秋"></option>
-                    <option value="冬"></option>
-                    <option value="新年"></option>
-                </datalist>
+                    <select name="season" id="season">
+                        <option value="春">春</option>
+                        <option value="夏">夏</option>
+                        <option value="秋">秋</option>
+                        <option value="冬">冬</option>
+                        <option value="新年">新年</option>
+                    </select>
+                </section>
                 <br>
                 <label for="syllables">音数を指定する</label>
                 <br>
