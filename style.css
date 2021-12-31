@@ -1,0 +1,31 @@
+/*  */
+body {
+    font-family: serif ;
+    background-color: rgba(255, 255, 0,.5);
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    }
+      body h1{
+        font-size: 2.5rem;
+      }
+      body h2 {
+        font-size: 1rem;
+      }
+      @media (min-width: 992px) {
+        body {
+          height: 100vh;
+        }
+      }
+
+    #test  {
+        width: 50%;
+    }
+
+    #result {
+        width: 70%;
+    }
