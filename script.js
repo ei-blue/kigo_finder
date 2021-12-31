@@ -6,13 +6,13 @@ document.getElementById('todaysdate').innerHTML = todayHtml;
 
 ///FINDER
 let researchResult = document.getElementById("result");
-var resultList = [];
 
 /* Run code on submit button push */
 let locationForm = document.getElementById("finder");
 locationForm.addEventListener("submit", function(event) {
 	let season = locationForm.elements.namedItem("season").value;
 	let syllables = locationForm.elements.namedItem("syllables").value;
+    let resultList = [];
 
     //場合分け
     switch(season){
@@ -67,12 +67,15 @@ locationForm.addEventListener("submit", function(event) {
             });
             break;
     }
-    console.log(resultList.length);
+
 	/* This stops the usual function of "submit" which is to send data
 	to another server */
 	event.preventDefault();
 })
 
-
+//Run this code when tap reset
+locationForm.addEventListener("reset", function(event) {
+    resultList = [];
+    researchResult.innerHTML=resultList;
+})
 ///////
-
