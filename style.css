@@ -23,11 +23,13 @@ body {
       }
 
     #test  {
-        width: 50%;
+        width: 90%;
         min-width:320px;
+        max-width:500px;
     }
 
     #result {
-        width: 70%;
+        width: 90%;
         min-width:320px;
+        max-width:650px;
     }
