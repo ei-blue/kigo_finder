@@ -24,8 +24,10 @@ body {
 
     #test  {
         width: 50%;
+        min-width:320px;
     }
 
     #result {
         width: 70%;
+        min-width:320px;
     }
