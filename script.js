@@ -1,4 +1,4 @@
-//show date
+//Display date
 let today = new Date();
 let todayHtml = today.getFullYear() + '/' + (today.getMonth()+1) + '/' + today.getDate()
 document.getElementById('todaysdate').innerHTML = todayHtml;
@@ -14,10 +14,10 @@ locationForm.addEventListener("submit", function(event) {
 	let syllables = locationForm.elements.namedItem("syllables").value;
     let resultList = [];
 
-    //場合分け
+    //seasons
     switch(season){
         case "春":
-            $.getJSON('https://raw.githubusercontent.com/ei-blue/kigo_finder/main/spring.json', function(data){
+            $.getJSON('https://raw.githubusercontent.com/ei-blue/kigo_finder/main/seasons/spring.json', function(data){
                 for (const element in data) {
                     if (data[element].syllables=== Number(syllables)){
                         resultList.push(`${data[element].word}(${data[element].yomi})`);
@@ -27,7 +27,7 @@ locationForm.addEventListener("submit", function(event) {
             });
             break;
         case "夏":
-            $.getJSON('https://raw.githubusercontent.com/ei-blue/kigo_finder/main/summer.json', function(data){
+            $.getJSON('https://raw.githubusercontent.com/ei-blue/kigo_finder/main/seasons/summer.json', function(data){
                 for (const element in data) {
                     if (data[element].syllables=== Number(syllables)){
                         resultList.push(`${data[element].word}(${data[element].yomi})`);
@@ -37,7 +37,7 @@ locationForm.addEventListener("submit", function(event) {
             });
             break;
         case "秋":
-            $.getJSON('https://raw.githubusercontent.com/ei-blue/kigo_finder/main/fall.json', function(data){
+            $.getJSON('https://raw.githubusercontent.com/ei-blue/kigo_finder/main/seasons/fall.json', function(data){
                 for (const element in data) {
                     if (data[element].syllables=== Number(syllables)){
                         resultList.push(`${data[element].word}(${data[element].yomi})`);
@@ -47,7 +47,7 @@ locationForm.addEventListener("submit", function(event) {
             });
             break;
         case "冬":
-            $.getJSON('https://raw.githubusercontent.com/ei-blue/kigo_finder/main/winter.json', function(data){
+            $.getJSON('https://raw.githubusercontent.com/ei-blue/kigo_finder/main/seasons/winter.json', function(data){
                 for (const element in data) {
                     if (data[element].syllables=== Number(syllables)){
                         resultList.push(`${data[element].word}(${data[element].yomi})`);
@@ -57,7 +57,7 @@ locationForm.addEventListener("submit", function(event) {
             });
             break;
         case "新年":
-            $.getJSON('https://raw.githubusercontent.com/ei-blue/kigo_finder/main/new_year.json', function(data){
+            $.getJSON('https://raw.githubusercontent.com/ei-blue/kigo_finder/main/seasons/new_year.json', function(data){
                 for (const element in data) {
                     if (data[element].syllables=== Number(syllables)){
                         resultList.push(`${data[element].word}(${data[element].yomi})`);
