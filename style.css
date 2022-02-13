@@ -1,4 +1,94 @@
-/*  */
+
+body {
+  font-family: "Courier New",
+  "Helvetica Neue",
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  Meiryo,
+  sans-serif;
+  color: #333333;
+  background-image: url(images/leaf.jpg);
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 5px auto;
+  }
+
+header{
+  padding:10px;
+}
+
+h1{
+  font-size: 3.5rem;
+  text-shadow:2px 2px 3px white;
+  font-weight: bold;
+  text-align: center;
+}
+.align-right{
+  text-align: right;
+}
+.language{
+  margin:10px 10px;
+  font-weight:bold;
+  font-size: 20px;
+  text-shadow:  1px  1px 2px white,
+               -1px  1px 2px white,
+                1px -1px 2px white,
+               -1px -1px 2px white;
+}
+
+
+h2 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+#todaysdate{
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+h3 {
+  font-size: 18px;
+}
+
+#content{
+  background-color: rgba(255, 255, 255, 0.562);
+  opacity: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+#entry{
+  margin: 30px;
+}
+
+#result{
+  text-align: left;
+}
+
+footer {
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  height: 20px;
+}
+
+
+@media (min-width: 992px) {
+  body {
+    height: 100vh;
+  }
+}
+
+/*  
 body {
     font-family: serif ;
     background-color: rgba(255, 255, 0,.5);
@@ -9,6 +99,7 @@ body {
     height: auto;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    margin: 10px auto;
     }
       body h1{
         font-size: 2.5rem;
@@ -22,7 +113,7 @@ body {
         }
       }
 
-    #test  {
+    #entry  {
         width: 90%;
         min-width:320px;
         max-width:500px;
@@ -33,3 +124,5 @@ body {
         min-width:320px;
         max-width:650px;
     }
+
+ 
