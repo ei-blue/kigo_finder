@@ -6,12 +6,8 @@ document.getElementById('todaysdate').innerHTML = todayHtml;
 ///FINDER
 let researchResult = document.getElementById("result");
 
-//English version
-//let enResearchResult = document.getElementById("en_result");
-
 /* Run code on submit button push */
 let locationForm = document.getElementById("finder");
-//let tmp=[];
 
 locationForm.addEventListener("submit", function(event) {
 	let season = locationForm.elements.namedItem("season").value;
